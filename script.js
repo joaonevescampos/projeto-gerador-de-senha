@@ -1,3 +1,4 @@
+const inputEl = document.querySelector('#senha')
 let tamanho = 12
 
 function geradorDeSenha(){
@@ -10,9 +11,13 @@ function geradorDeSenha(){
         senha.push(sorteio)   
     }
     senha = senha.join('')
-    const inputEl = document.querySelector('#senha')
     inputEl.value = senha
 }
+
+const copiarEl = document.querySelector('.copiar')
+copiarEl.addEventListener('click', function (){
+    navigator.clipboard.writeText(inputEl.value)
+})
 
 const tamanhoEl = document.querySelector('#tamanho')
 tamanhoEl.addEventListener('input', function() {

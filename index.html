@@ -4,14 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de senha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
 </head>
 <body>
-    <h1>Gerador de senha</h1>
-    <p>Utilize o gerador para criar uma senha forte e segura</p>
-    <input type="text" name="senha" id="senha">
-    <h2>Personalizar</h2>
-    <input type="range" name="tamanho" id="tamanho" value="10"  min="6" max="32">
-    <button>Copiar senha</button>
+    <main>
+        <h1>Gerador de senha</h1>
+        <p>Utilize o gerador para criar uma senha forte e segura.</p>
+        <section class="container-visor">
+            <input type="text" name="senha" id="senha">
+                <button class="botao-copy">
+                    <span class="material-symbols-outlined copiar">
+                        content_copy
+                        </span>
+                </button>
+                <button class="botao-refresh">
+                    <span class="material-symbols-outlined">
+                        refresh
+                        </span>
+                   
+                </button>
+        </section>
+        <div class="barra-seguranca"></div>
+        <h2>Personalizar</h2>
+        <input type="range" name="tamanho" id="tamanho" value="10"  min="6" max="32">
+        <div class="container-copiar">
+            <button class="copiar" id="copiar2">Copiar senha</button>
+        </div>
+    </main>
 
 <script src="script.js"></script>
 </body>
