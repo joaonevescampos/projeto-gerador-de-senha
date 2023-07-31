@@ -15,27 +15,46 @@
         <p>Utilize o gerador para criar uma senha forte e segura.</p>
         <section class="container-visor">
             <input type="text" name="senha" id="senha">
-                <button class="botao-copy">
-                    <span class="material-symbols-outlined copiar">
-                        content_copy
-                        </span>
-                </button>
-                <button class="botao-refresh">
-                    <span class="material-symbols-outlined">
-                        refresh
-                        </span>
-                </button>
+            <button class="botao-refresh">
+                <span class="material-symbols-outlined">
+                    refresh
+                    </span>
+            </button>
+            <button class="botao-copy">
+                <span class="material-symbols-outlined copiar">
+                    content_copy
+                    </span>
+            </button>
+            
         </section>
         <div class="barra-fundo">
             <div class="barra-seguranca"></div>
         </div>
-        <section class="personalizar">
-            <h2>Personalizar</h2>
-            <span>
-                <p class="tamanho-senha">Tamanho: 12</p>
-            </span>
-            <input type="range" name="tamanho" id="tamanho" value="10"  min="6" max="32">
-        </section>
+        <div class="container">
+            <section class="personalizar">
+                <h2>Personalizar</h2>
+                <span>
+                    <p class="tamanho-senha">Tamanho: 12</p>
+                </span>
+                <input type="range" name="tamanho" id="tamanho" value="10"  min="6" max="32">
+            </section>
+            <section class="configurar">
+            
+                    <div class="check">
+                        <input type="checkbox" name="check-numero" id="check-numero" checked>
+                        <label for="check-numero" id="texto-numero">Número</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" name="check-numero" id="check-maiuscula" checked>
+                        <label for="check-maiuscula" id="texto-maiuscula">Maiúscula</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" name="check-numero" id="check-simbolo" checked>
+                        <label for="check-simbolo" id="texto-simbolo">Símbolo</label>
+                    </div>
+       
+            </section>
+        </div>
         <div class="container-copiar">
             <button class="copiar" id="copiar2">Copiar senha</button>
         </div>
