@@ -80,11 +80,49 @@ input{
     cursor: pointer;
 }
 
-.barra-seguranca{
-    background-color: rgb(19, 139, 25);
+.barra-fundo{
+    background-color: rgb(173, 173, 173);
     border-radius: 5px ;
     height: 5px;
     width: 300px;
+}
+
+.barra-seguranca{
+    background-color: rgb(19, 139, 25);
+    width: 60%;
+    border-radius: 5px ;
+    height: 5px;
+}
+
+.barra-seguranca .fraca{
+    background-color: rgb(139, 19, 19);
+}
+
+.barra-seguranca .media{
+    background-color: rgb(197, 209, 28);
+}
+
+.barra-seguranca .forte{
+    background-color: rgb(19, 139, 25);
+}
+
+.personalizar{
+    margin: 20px 0;
+}
+
+.personalizar > input{
+    width: 150px;
+}
+
+.personalizar span{
+    display: flex;
+}
+
+.tamanho-senha{
+    color: gray;
+    font-weight: 600;
+    font-size: 11px;
+    margin: 0;
 }
 
 

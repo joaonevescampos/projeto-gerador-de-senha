@@ -19,13 +19,23 @@ copiarEl.addEventListener('click', function (){
     navigator.clipboard.writeText(inputEl.value)
 })
 
+
+
+
+
+
 const tamanhoEl = document.querySelector('#tamanho')
+
 tamanhoEl.addEventListener('input', function() {
     tamanho = tamanhoEl.value
+    console.log(tamanho)
+    tamanhoSenhaEl = document.querySelector('.tamanho-senha')
+    tamanhoSenhaEl.innerHTML = `Tamanho: ${tamanho}`
     geradorDeSenha()
 
 })
 
-geradorDeSenha()
 
+
+geradorDeSenha()
 
