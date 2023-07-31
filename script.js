@@ -94,17 +94,5 @@ tamanhoEl.addEventListener('input', function() {
 
 geradorDeSenha()
 
-/*
-
-1 - Criar uma função que calcula o indice de segurança
-2 - capturar o id da barra para movimentá-la.
-3 - criar a equação de calculo do indice de segurança.
-4 - condicional:
-se maiscula estiver marcada -> aumenta o indice de segurança
-...
-5 - escrever no css o width da barra de acordo com o indice de segurança calculado.
-
-*/
-
 
 
